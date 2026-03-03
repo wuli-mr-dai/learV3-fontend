@@ -19,6 +19,13 @@ const routes: RouteRecordRaw[] = [
     name: 'Test',
     component: () => import('@/views/Test.vue'),
     meta: { requiresAuth: true }
+  },
+  // 404 页面 - 放在最后
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('@/views/Error/404.vue'),
+    meta: { requiresAuth: false }
   }
 ]
 

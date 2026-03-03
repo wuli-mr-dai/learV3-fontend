@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    21
     <DefaultLayout />
   </div>
 </template>
